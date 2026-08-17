@@ -1,0 +1,12 @@
+resources:
+  pipelines:
+    pipeline_pipeline_1:
+      name: pipeline_1
+      libraries:
+        - glob:
+            include: ../../src/pipeline_1/transformations/**
+      schema: default
+      photon: true
+      catalog: sparkcatalog
+      serverless: true
+      root_path: /Workspace/DAB_Tutorial_Udemy/databricks_udemy/dab_tutorial/src/pipeline_1
